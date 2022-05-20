@@ -5,19 +5,23 @@
   "main": "index.js",
   "scripts": {
     "build": "npx tsc",
+    "jasmine":"jasmine",
+    "test": "npm run build && npm run jasmine",
     "prettier": "prettier --config .prettierrc \"src/**/*.ts\" --write",
     "eslint": "eslint . --ext .ts"
   },
   "author": "amr mohamed",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.18.1"
+    "express": "^4.18.1",
+    "jasmine": "^4.1.0"
   },
   "devDependencies": {
     "@types/eslint": "^8.4.2",
     "@types/eslint-config-prettier": "^6.11.0",
     "@types/eslint-plugin-prettier": "^3.1.0",
     "@types/express": "^4.17.13",
+    "@types/jasmine": "^4.0.3",
     "@types/node": "^17.0.35",
     "@types/prettier": "^2.6.1",
     "@typescript-eslint/eslint-plugin": "^5.25.0",
@@ -25,6 +29,7 @@
     "eslint": "^8.15.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.0.0",
+    "jasmine-spec-reporter": "^7.0.0",
     "nodemon": "^2.0.16",
     "prettier": "^2.6.2",
     "ts-node": "^10.7.0",
