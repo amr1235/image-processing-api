@@ -1,1 +1,1 @@
-console.log("test type script");
+console.log('test type script');
