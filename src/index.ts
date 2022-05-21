@@ -1,3 +1,8 @@
-export const add = (num1:number,num2:number) => {
-    return num1+num2;
-}
+import express from 'express';
+
+const PORT = 3000;
+const app = express();
+
+app.listen(PORT, () => {
+  console.log(`server started at http://localhost:${PORT}`);
+});
