@@ -14,11 +14,13 @@
   "author": "amr mohamed",
   "license": "ISC",
   "dependencies": {
+    "apicache": "^1.6.3",
     "express": "^4.18.1",
     "jasmine": "^4.1.0",
     "sharp": "^0.30.4"
   },
   "devDependencies": {
+    "@types/apicache": "^1.6.1",
     "@types/eslint": "^8.4.2",
     "@types/eslint-config-prettier": "^6.11.0",
     "@types/eslint-plugin-prettier": "^3.1.0",
