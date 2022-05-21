@@ -13,6 +13,10 @@ This project was built using industry best practices to ensure that the code is 
 ```sh
 > npm run build
 ```
+2. run the tests 
+```sh
+> npm run test
+```
 3. Run the server 
 ```sh
 > npm start
