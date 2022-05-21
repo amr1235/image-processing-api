@@ -7,7 +7,7 @@ export interface OutputObject {
   channels: number;
   premultiplied: boolean;
   size: number;
-}; // from sharp documentation
+} // from sharp documentation
 
 export const isValideExt = (filePath: string): boolean => {
   const available: string[] = [
