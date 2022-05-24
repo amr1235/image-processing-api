@@ -1,6 +1,7 @@
 import express from 'express';
 import path from 'path';
 import { resize } from '../lib/image';
+import { existsSync } from 'fs';
 
 const images = express.Router();
 
@@ -22,6 +23,11 @@ images.get(
       path.resolve('./assests/full/') + '/' + fileName + '.jpg';
     const outputImage =
       path.resolve('./assests/thump/') + '/' + fileName + '.jpg';
+    // check if the image already exist
+    if (existsSync(outputImage)) {
+      res.status(200).sendFile(outputImage);
+      return;
+    }
     // resize the image
     try {
       await resize(inputImage, width, height, outputImage);
